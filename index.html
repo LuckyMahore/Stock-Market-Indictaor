@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Stock Dashboard</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background: #f5f5f5;
+      color: #333;
+    }
+    #dashboard {
+      max-width: 600px;
+      margin: auto;
+      text-align: center;
+    }
+    .stock {
+      margin: 20px 0;
+      font-size: 1.5rem;
+    }
+    #sentiment {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    input {
+      padding: 10px;
+      font-size: 1rem;
+      width: 200px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 1rem;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div id="dashboard">
+    <h1>📈 Stock Dashboard</h1>
+    <input type="text" id="symbolInput" placeholder="Enter Stock Symbol (e.g., AAPL)" />
+    <button onclick="fetchStockData()">Search</button>
+    <div class="stock" id="stockInfo"></div>
+    <div id="sentiment"></div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
